@@ -1,7 +1,6 @@
-package modelos;
+package ni.edu.uam.PruebaSem9.modelos;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.AssertTrue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,9 +25,4 @@ public class Autor {
     @Column(name = "fecha_nacimiento_autor", nullable = false)
     private LocalDate fechaNacimiento;
 
-    @Transient
-    @AssertTrue(message = "El autor debe ser mayor de edad")
-    public boolean mayorDeEdad() {
-        return fechaNacimiento != null && fechaNacimiento.isBefore(LocalDate.now().minusYears(18));
-    }
 }

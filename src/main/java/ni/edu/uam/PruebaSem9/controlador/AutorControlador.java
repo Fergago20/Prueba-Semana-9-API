@@ -1,8 +1,8 @@
-package controlador;
+package ni.edu.uam.PruebaSem9.controlador;
 
-import modelos.Autor;
+import ni.edu.uam.PruebaSem9.modelos.Autor;
 import org.springframework.web.bind.annotation.*;
-import servicios.AutorServicio;
+import ni.edu.uam.PruebaSem9.servicios.AutorServicio;
 
 import java.util.List;
 

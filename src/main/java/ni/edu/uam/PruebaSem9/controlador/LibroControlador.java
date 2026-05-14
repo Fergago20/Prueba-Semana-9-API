@@ -1,9 +1,8 @@
-package controlador;
+package ni.edu.uam.PruebaSem9.controlador;
 
-import modelos.Libro;
+import ni.edu.uam.PruebaSem9.modelos.Libro;
 import org.springframework.web.bind.annotation.*;
-import repositorios.LibroRepo;
-import servicios.LibroServicio;
+import ni.edu.uam.PruebaSem9.servicios.LibroServicio;
 
 @RestController
 @RequestMapping("/api/libros")

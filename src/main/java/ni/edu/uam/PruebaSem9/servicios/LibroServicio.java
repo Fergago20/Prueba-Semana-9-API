@@ -1,9 +1,8 @@
-package servicios;
+package ni.edu.uam.PruebaSem9.servicios;
 
-import modelos.Autor;
-import modelos.Libro;
+import ni.edu.uam.PruebaSem9.modelos.Libro;
 import org.springframework.stereotype.Service;
-import repositorios.LibroRepo;
+import ni.edu.uam.PruebaSem9.repositorios.LibroRepo;
 
 import java.util.List;
 

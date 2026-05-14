@@ -1,8 +1,7 @@
-package modelos;
+package ni.edu.uam.PruebaSem9.modelos;
 
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.AssertTrue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,9 +31,4 @@ public class Libro {
     @JoinColumn(name = "id_autor", nullable = false)
     private Autor autor;
 
-    @Transient
-    @AssertTrue(message = "La fecha de publicación no puede ser futura")
-    public boolean fechaValida() {
-        return fecha != null && !fecha.isAfter(LocalDate.now());
-    }
 }
